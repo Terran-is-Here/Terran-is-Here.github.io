@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
-
+var forcedep = navbar
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
