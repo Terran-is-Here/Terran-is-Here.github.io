@@ -32,3 +32,9 @@
   .sticky + .content {
     padding-top: 60px;
   }
+  .content {
+    padding-left: 10%;
+    padding-right: 10%
+    border: solid red 
+
+  }
