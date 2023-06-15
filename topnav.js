@@ -1,12 +1,13 @@
 
 window.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded and parsed");
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
     window.onscroll = function() {myFunction()};
   });
 
   window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+
 var forcedep = navbar
 function myFunction() {
   if (window.pageYOffset >= sticky) {
