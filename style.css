@@ -1,48 +1,109 @@
-#navbar {
-    overflow: hidden;
-    background-color: #333;
-    
-  }
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
-  #navbar a { /* Classes <a> elements within #navbar */
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  #navbar a:hover { /*Classed when hovering*/
-    background-color: #ddd;
-    color: black;
-  }
-  
-  #navbar a.active { /*Classed when active (?) */
-    background-color: #04AA6D;
-    color: white;
-  }
 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
-  .content {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-    border: solid red;
+body {
+    background: black;
+    margin: 0px;
+    color: #fff;
+    text-shadow: 0 0 6px #000;
     font-family: Arial, Helvetica, sans-serif;
+}
 
-  }
-  .pagetitle {
-    text-align: center !important;
-    border: solid red; 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#topnav_bg_container {
+    background-image: url("images/IMG_4588.JPG");
+    width: 100%;
+    background-size: cover;
+    display:block;
+    height:15vh;
+
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto; margin-right: auto;
+
+}
+
+#topnav_bg_gradient{
+    background: linear-gradient(#00000000 0%, #00000000 70%,  #000000FF 100%);
+    height:100%;
     
-  }
+}
+
+#topnav_image {
+    border: 0;
+    padding-right: 20px
+}
+
+#topnav_container {
+    height:95%;
+    width:100%;
+    vertical-align: center;
+    display:flex;
+    justify-content: left;
+    align-items:center;
+    
+}
+
+#topnav_text{
+    width:50%;
+    min-width:300px;
+}
+
+#topnav_text_container {
+    display:flex;
+    width:100%;
+    align-items: center;
+}
+
+#site_title {
+    font-size: 30px;
+    font-style: bold;
+    font-family: "Space Mono", monospace;
+ 
+}
+#page_title_subtitle {
+    font-size:13px;
+    font-style: italic;
+}
+
+#page_content {
+
+    height:100%;
+    width:90%;
+    margin-left: auto; margin-right: auto;
+    margin-top:10px
+}
+
+#page_content_bg {
+
+background-image: url("images/IMG_7950.JPG");
+    background-size: cover;
+    
+}
+#page_content_bg_gradient {
+backdrop-filter: blur(5px);
+background: linear-gradient( to top,#00000000 0%, #00000000 90%,  #000000FF 95%,#000000FF 100%);
+height:100%;
+width:100%
+}
+
+#page_title {
+    font-family: "DotGothic16", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color:#63ce4b;
+    text-align: center;
+    border-bottom: solid black 3px;
+    padding-bottom: 5px;
+    width:90%;
+    margin: 0 auto;
+    margin-bottom: 2.5%;
+}
