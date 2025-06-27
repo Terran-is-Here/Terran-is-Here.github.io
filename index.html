@@ -1,25 +1,33 @@
+
 <html>
 
 <head>
     <link rel="stylesheet" href="style.css" >
-
+    <link rel="stylesheet" href="window_style.css" >
+    
+    
+    <link rel="icon" href="images/TheHoarders.png" type="image/png">
+   <title>Solar's Observatory</title>
 </head>
 
-<body>
+<body style="background-image: url('images/IMG_8115.JPG'); backdrop-filter: blur(3px);">
+    <script src="scrollheight.js"></script>
 <div id="topnav_bg_container">
     <div id="topnav_bg_gradient">
         <div id="container">
             <div id="topnav_container">
-                <img src="images/TheHoarders.png" loading="lazy" id="topnav_image" height="80%">
+                <a style="height:100%; display:flex;align-items: center;justify-items: center;" href="index.html"><img src="images/TheHoarders.png" loading="lazy" id="topnav_image" draggable="false" height="80%" ></a>
+                
                 <div id="topnav_text_container">
                     <div id="topnav_text">
-            <span id="site_title">Solar's Observatory</span><br>
-            <span id="page_title_subtitle">A little experimental landing page online.</span>
+            <span id="site_title">solar's observatory</span><br>
+            <span id="site_title_subtitle">a little place of home on the wide expanse of the internet</span>
             
             <div style="display: flex; justify-content: space-between; align-items: center; padding-top:10px;font-size:15px">
-                <a>Link 1 Here</a>
-                <a>Link 2 Here</a>
-                <a>Link 3 Here</a>
+                <a>about me</a>
+                <a>interests</a>
+                <a>contacts</a>
+                <a>sources</a>
 
 
             </div>
@@ -28,12 +36,35 @@
         
     </div></div></div></div>
 </div> 
-<div id="page_content_bg">
+<div id="page_content_bg" >
     <div id="page_content_bg_gradient">
         <div id="page_content">
             <div id="page_title">about me</div>
-            testing
+
+
+            <div class="window_container">
+                <div class="window_title_bg">
+                    <div class="window_title_container">
+                        <img src="win98_icons/chm-2.png" height="20px">
+                    <div class="window_title">basic information</div>
+                    </div>
+                    <div class="window_title_buttons">
+                    <button class="minimize"></button>
+                    <button class="maximize"></button>
+                    <button class="close"></button>
+                </div>
+            
+            </div>
+            <div class="window_content">
+                <p>
+                    Hello, I am Solarium (he/him)! 
+                    
+
+
+                </p>
+            </div>
         </div>
+        
     </div>
 </div>
 

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+.window_container{
+    box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
+    padding: 3px;
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+    background:silver
+}
+
+.window_title_bg {
+    font-family: "DotGothic16", sans-serif;
+    display:flex;
+    letter-spacing: 3px;
+    padding-left:10px;
+    padding-top: 5px;
+    padding-right:5px;
+    padding-bottom:5px;
+    background: linear-gradient(90deg, #000080 , #1084d0);
+    justify-content: space-between;
+}
+
+.window_title_container {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.window_title {
+    color:white;
+    font-size:17px;
+    padding-left: 10px;
+    
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+
+.window_content {
+    color: black;
+        font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  height:5000px;
+  font-size:17px;
+    text-shadow: none;
+
+}
+
+
+/* Button Icon / CSS taken from  https://github.com/jdan/98.css*/ 
+
+.window_title_buttons {
+    display:flex;
+    align-items: center;
+}
+.window_title_buttons button {
+display: block;
+  min-height: 14px;
+  height:100%;
+  min-width: 16px;
+  padding: 0;
+background: silver;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-image: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
+  box-sizing: border-box;
+  color: transparent;
+  padding: 0 12px;
+  text-shadow: 0 0 #222;
+}
+.window_title_buttons button:active{
+      box-shadow: inset -1px -1px #ffffff,
+    inset 1px 1px #0a0a0a, inset -2px -2px  #dfdfdf,
+    inset 2px 2px #808080;
+  
+}
+
+button.minimize {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+button.maximize {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+button.close {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 2px;
+}
