@@ -5,12 +5,27 @@ html {
     overflow-y: scroll;
 }
 
-.page_section {
-    width:100%;
-    display:flex;
-    margin-top:10px;
-    align-content: space-between;
+/* Link Styling */
+a {
+    text-decoration: none;
+    font-weight: bold;
 }
+a:visited {
+    color:rgb(2, 111, 111);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color:rgb(7, 152, 7);
+    text-decoration: underline;
+}
+a:link {
+    color:rgb(222, 255, 4)
+}
+
+
+
+/* Page Content Styling */
 body {
     background: black;
     margin: 0px;
@@ -27,6 +42,14 @@ html, body {
     overflow-x: hidden;
 }
 
+.page_section {
+    width:100%;
+    display:flex;
+    margin-top:10px;
+    align-content: space-between;
+}
+
+/*Topnav / topbar styling */
 #topnav_bg_container {
     background-image: url("images/IMG_4588.JPG");
     width: 100%;
@@ -76,6 +99,7 @@ html, body {
     align-items: center;
 }
 
+/* Site Title (top title) styling*/
 #site_title {
     font-size: 30px;
     font-style: bold;
@@ -87,6 +111,7 @@ html, body {
     font-style: italic;
 }
 
+/* Page Content Styling*/
 #page_content {
 
     height:100%;
