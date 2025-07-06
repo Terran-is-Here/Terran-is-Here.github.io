@@ -34,9 +34,16 @@ div#interests_hover_tab_contents > nav > a::before{
 #interests_hover_tab_container:hover #interests_hover_tab_contents {
     visibility: visible;
     opacity:1;
+    
     transition: opacity 0.15s ease-in, visibility 0s linear 0.05s;
 }
 
 #interests_hover_tab_container:hover #interests_hover_tab_text::after  {
     content: " - "
+}
+
+#interests_hover_tab_container:hover {
+    border-bottom: 1px white solid;
+    margin-bottom:-1px;
+    transition: border-bottom 0.05s ease-in
 }

@@ -1,12 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+@media (min-width:321px) {
+  .window_container {
+    display:block !important; 
+    width: 100% !important
+  }
+
+}
+
+@media (min-width:801px) {
+  .window_container {
+    display: inline-block 
+    
+  }
+}
 .window_container{
     box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
     padding: 3px;
     margin-top:10px;
     width:100%;
-    max-width:950px;
-    margin:0 auto;
-    background:silver
+    max-width:900px;
+    
+    margin-right: auto;
+    margin-left: auto;
+    background:silver;
+    display: inline-block;
 }
 
 .window_title_bg {
@@ -55,16 +73,16 @@
     align-items: center;
 }
 .window_title_buttons button {
-display: block;
+  display: block;
   min-height: 14px;
   height:100%;
   min-width: 16px;
   padding: 0;
-background: silver;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-image: none;
+  background: silver;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-image: none;
   border: none;
   border-radius: 0;
   box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
