@@ -48,7 +48,7 @@ html, body {
     margin-top:10px;
     align-content: space-between;
 }
-
+/*Page Content Reacitve Scaling for Page Sections (Forces straight vertical layout  */
 @media (min-width:321px) {
     .page_section {
         display: block !important;
@@ -147,6 +147,21 @@ html, body {
     font-style: italic;
 }
 
+/* Site Title font scaling (since if too big it dosent wrap properly*/
+@media (min-width:321px) {
+    #site_title {
+        font-size: 20px !important;
+        /*border: solid yellow;*/
+    }
+}
+
+@media (min-width: 801px) {
+    #site_title {
+        font-size: 30px !important;
+        /*border: solid red;*/
+    }
+}
+
 /* Page Content Styling*/
 #page_content {
 
@@ -181,6 +196,8 @@ background-attachment: scroll;
     margin: 0 auto;
     margin-bottom: 2.5%;
 }
+
+
 
 div.window_content p {
     margin: 5px 0 0 0 ;
