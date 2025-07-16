@@ -23,7 +23,7 @@
 }
 
 #interests_hover_tab_text::after {
-    content: " + "
+    content: ""
 }
 
 div#interests_hover_tab_contents > nav > a::before{
@@ -39,7 +39,7 @@ div#interests_hover_tab_contents > nav > a::before{
 }
 
 #interests_hover_tab_container:hover #interests_hover_tab_text::after  {
-    content: " - "
+    content: ""
 }
 
 #interests_hover_tab_container:hover {
