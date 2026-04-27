@@ -1,4 +1,30 @@
 <header class="site-header" role="top_banner">
-insert header here     
-<b> woah bold text </b>
+    <div class="header-wrapper">
+    {%- assign default_paths = site.pages| map:"path" -%}
+    {%- assign header_paths = site.header_pages | default: default_paths -%}
+        <div id="page-title">
+            <div>placeholder image here</div>
+            <div>{{site.title}}</div>
+        </div>
+
+    <nav class="site-nav"> 
+        
+        
+        
+        {%- for path in header_paths -%}
+        
+        {%- assign current_page = site.pages| where: "path", path | first}
+        {%- if current_page.title -%}
+        
+        {%- if my_page.istabber -%}
+        <div class="topnav_element_dropdown">insert tabberlogic here</div>
+        {%-else -%}
+        <div class="topnav_element"><a href="{{current_page.url | relative_url}}">{{current_page.title}}</a></div>
+        {%- endif}
+
+
+        {%- endif -%}
+        {%- endfor -%}
+    </nav>    
+</div>
 </header> 

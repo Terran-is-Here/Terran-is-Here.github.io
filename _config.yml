@@ -32,9 +32,16 @@ github_username:  jekyll
 plugins:
   - jekyll-feed
 
+include: 
+- _pages
+
 # Styling / build directory settings
-#sass: 
-#  sass_dir: _sass
+header_pages: 
+- _pages/about.md 
+
+# Default files
+defaultheaderfile: 
+- something.png
 
 
 # Exclude from processing.
