@@ -1,0 +1,23 @@
+.clear-fix {
+    content: "";
+    display:table;
+    clear:both;
+}
+
+div.base-image > figure >figcaption.base-image-caption {
+    text-align: center;
+    
+    font-family: var(--base-text-font) 0.75em;
+    
+}
+
+div.base-image > figure > img {
+    border-bottom: solid var(--page-section-line-color) 2px; 
+
+}
+
+div.base-image{
+    border: solid var(--page-section-line-color) 2px;
+    background: var(--base-image-background-color); 
+    margin: 0.5em;
+}

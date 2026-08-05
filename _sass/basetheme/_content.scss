@@ -1,0 +1,82 @@
+//* Main content section container css*//
+/*Page Section theming*/ 
+
+div.window-page-section{ 
+    border: var(--page-section-border-color) outset 4px; 
+    background: var(--page-section-background-color);   
+    -webkit-box-shadow: 4px 4px 8px 5px rgba(0,0,0,0.58); 
+    font-family: var(--base-text-font);
+    font-size: var(--base-text-size);
+    box-shadow: 4px 4px 8px 5px rgba(0,0,0,0.58);
+    padding: 0.45em;
+    margin-bottom:1em;
+}
+
+div.page-section-title {
+
+    border-bottom: var(--page-section-title-border-color) solid 2px; 
+    display:flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+div.page-section-title > p {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-weight: 600;
+    
+    font-size: var(--page-section-title-font-size);
+    letter-spacing: 1px;
+    font-style: italic;
+    
+    color: var(--page-section-title-color); 
+}
+
+div.window-page-section > div.page-content {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%
+}
+
+div.window-page-section > div.page-content > p, .normaltext {
+    
+    font-family: var(--base-text-font);
+    font-size: 16px;
+}
+
+div.page-section-title-buttons {
+    height: calc(1.25em * 1.5);
+    min-width: calc(var(--page-section-title-font-size) * 3 + 10px); 
+    display:flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+/* Topbar button styling */
+div.page-section-title-buttons > button {
+    height: 90%;
+    min-width: 33%;
+    border-radius: 0px; 
+    padding: 0.2em;
+    color: var(--base-text-color);
+    font-size: 1.25em; 
+    padding: 3px;
+    display:inline-flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: none; 
+    background: none;
+    border: var(--page-section-border-color) outset 3px; 
+    margin: 0px 3px;
+    transition: background-color 0.3s ease; 
+    transition: color 0.2s ease; 
+}
+div.page-section-title-buttons > button:hover {
+    background-color: var(--page-section-title-color); 
+    border: var(--page-section-border-color) inset 3px; 
+    color: black;
+}

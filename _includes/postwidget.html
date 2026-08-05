@@ -1,0 +1,23 @@
+<a href="{{include.displayPost.url}}">
+    {% assign tagCount = include.displayPost.tags | size %}
+<div class="post-widget">
+    <div>
+        <div class="post-detail-container">
+            <div class="post-name">{{include.displayPost.title}}</div>
+            <div class="post-date">{{include.displayPost.date | date_to_string: "ordinal", "US"}}</div>
+        </div>
+        <div class="post-summary">{{include.displayPost.summary}}</div>
+    </div>
+    <div class="post-tag-container">
+        
+        {% if tagCount > 0 %}
+        {% for tag in include.displayPost.tags %}
+        <div class="post-tag">
+        ({{tag}})
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+    
+</div>
+</a>

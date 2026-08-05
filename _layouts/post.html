@@ -1,1 +1,39 @@
-ECHO is on.
+<!--Default HTML Template from which other objects will inherit. -->
+<!DOCTYPE html>
+
+<html>
+{%- include head.html -%}
+
+<body> 
+
+<!--Page-container div for the overall page itself-->
+    {%- include header.html -%} 
+    <div id="page-background-gradient"> 
+    <div id="page">
+
+
+    <!-- The main content itself is contained within main#page-content-->
+    <main class="page-content" aria-label="content">
+        <div id="page"> 
+            <div id="post-info-container">
+                <div id="post-display-title-container">
+                    <span id="post-title">{{page.title | markdownify}}</span>
+                    <span id="post-subtitle">{{page.subtitle | markdownify}}</span>
+                </div>
+                <div id="post-detail-container">
+                    <div id="post-date">Posted on: {{page.date | date_to_string: "ordinal", "US"}} ({{page.date | timeago: site.time}})</div>
+                    <div id="post-author">Author: {{page.author}}</div>
+                </div>
+            </div>
+        <div id="page-content-container"> 
+        {{content}}
+        </div>
+        </div>
+        
+        {%- include footer.html -%}
+    </main>
+    </div>
+</div>
+</body>
+
+</html> 

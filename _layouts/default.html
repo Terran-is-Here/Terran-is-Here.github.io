@@ -1,18 +1,32 @@
+<!--Default HTML Template from which other objects will inherit. -->
 <!DOCTYPE html>
+
 <html>
 {%- include head.html -%}
 
 <body> 
-{%- include header.html -%}
-</body>
 
-<main class="page-content" aria-label="content">
-<div class="content-wrapper">
-{{ content }}
+<!--Page-container div for the overall page itself-->
+    {%- include header.html -%} 
+    <div id="page-background-gradient"> 
+    <div id="page">
 
+
+    <!-- The main content itself is contained within main#page-content-->
+    <main class="page-content" aria-label="content">
+        <div id="page"> 
+        <div id="page-display-title">{{page.title | markdownify}}</div>
+        <div id="page-display-subtitle">{{page.subtitle | markdownify}}</div>
+        
+        <div id="page-content-container"> 
+        {{content}}
+        </div>
+        </div>
+        
+        {%- include footer.html -%}
+    </main>
+    </div>
 </div>
-
-</main>
-
+</body>
 
 </html> 

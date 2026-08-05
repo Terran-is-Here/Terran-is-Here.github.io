@@ -18,19 +18,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Elise's Observatory
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  a small abode in the seas of the interwebs
+title: lagrange's logs 
+email: plcauton@gmail.com
+description: &siteDescription >- # this means to ignore newlines until "baseurl:"
+  a small repository of our thoughts and rants and whatnot
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://terran-is-here.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-
+shortname: L2
 # Build settings
 #theme: minima
 plugins:
   - jekyll-feed
+
+
+# Excerpt seperators: 
+excerpt_separator: <!--excerpt--> 
+
 
 include: 
 - _pages
@@ -38,11 +43,31 @@ include:
 # Styling / build directory settings
 header_pages: 
 - _pages/about.md 
+- _pages/posts.md
 
 # Default files
 defaultheaderfile: 
 - something.png
 
+# Default properties: 
+defaults: 
+  - scope: # Covers all pages present on this app; set default bg to backgroundimage.png
+      path: "" 
+      type: "pages"
+    values:
+      backgroundImage: /assets/img/basepageshared/mainbackground.jpg
+      backgroundHeaderImage: /assets/img/basepageshared/headerbackgroundimage.jpg
+      title_description: *siteDescription 
+      embedImage: /assets/img/basepageshared/mainbackground.jpg
+  - scope: # Covers all pages present on this app; set default bg to backgroundimage.png
+      path: "" 
+      type: "posts"
+    values:
+      backgroundImage: /assets/img/basepageshared/mainbackground.jpg
+      backgroundHeaderImage: /assets/img/basepageshared/headerbackgroundimage.jpg
+      title_description: *siteDescription 
+      embedImage: /assets/img/basepageshared/mainbackground.jpg
+    
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,30 +1,45 @@
-<header class="site-header" role="top_banner">
-    <div class="header-wrapper">
+<header id="site-header" role="top_banner">
+    
+    <!--Liquid Variable Definitions-->
     {%- assign default_paths = site.pages| map:"path" -%}
     {%- assign header_paths = site.header_pages | default: default_paths -%}
-        <div id="page-title">
-            <div>placeholder image here</div>
-            <div>{{site.title}}</div>
-        </div>
+    
+    <!--Header Wrapper Container -->
+    <div id="header-background-gradient">
+    <div class="header-wrapper">
+        
+            <div id="page-title">
+                <div style="width:100%; text-align:center;"><img src="{{"/assets/img/basepageshared/sitelogo.png"| relative_url}}" width="100px" height="100px"></div>
+            </div>
+        
 
-    <nav class="site-nav"> 
-        
-        
-        
-        {%- for path in header_paths -%}
-        
-        {%- assign current_page = site.pages| where: "path", path | first}
-        {%- if current_page.title -%}
-        
-        {%- if my_page.istabber -%}
-        <div class="topnav_element_dropdown">insert tabberlogic here</div>
-        {%-else -%}
-        <div class="topnav_element"><a href="{{current_page.url | relative_url}}">{{current_page.title}}</a></div>
-        {%- endif}
+            <div id="siteTitleAndNavigation"> 
+                <div id="pageTitleContainer">
+                    <span id="pageTitle"><a href="{{"/" | relative_url}}">{{site.title}}</a></span>
+                    
+                    <div id="pageTitleDescriptionContainer">{{page.title_description}}</div>
+            </div>
+            
+            <!--Site Navigation Container (still contained in above header wrapper) -->
+            <nav class="site-nav"> 
+                <div class="topnav_element"><a href="{{'/' | relative_url}}">Home</a></div>
+                {%- for path in header_paths -%}
+                {%- assign current_page = site.pages| where: "path", path | first}
+                {%- if current_page.title -%}
+                
+                {%- if my_page.istabber -%}
+                <div class="topnav_element_dropdown">insert tabberlogic here</div>
+                {%-else -%}
+                
+                <div class="topnav_element"><a href="{{current_page.url | relative_url}}">{{current_page.title}}</a></div>
+                {%- endif}
 
 
-        {%- endif -%}
-        {%- endfor -%}
-    </nav>    
+                {%- endif -%}
+                {%- endfor -%}
+            </nav>    
+        
+    </div>
+    </div>
 </div>
 </header> 

@@ -1,0 +1,123 @@
+/* Post-Widget Formatting */
+div.post-widget {
+    box-sizing: border-box;
+    margin-top: 4px;
+    border: ridge var(--post-widget-border-color) 4px;
+    width:100%;
+    max-width: 70vh;
+    background: var(--post-widget-base-background);
+    min-height: 100px;
+    display:flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.post-widget:hover div.post-summary {
+    opacity: 1;
+}
+
+div.post-widget:hover div.post-tag-container {
+    opacity: 1;
+}
+
+div.post-feed-container {
+    width:100%;
+}
+
+div.post-detail-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background: var(--post-title-background-gradient);
+    border-bottom: ridge var(--post-widget-border-color) 4px;
+    padding: 5px 2px 2px 2px; 
+
+}
+
+div.post-detail-container > div.post-name {
+    font-family: var(--page-title-font);
+    font-weight: bold; 
+    font-size: 1.25em;
+    
+}
+
+
+
+div.post-tag-container{
+    display:flex; 
+    justify-content: center;
+    flex: 1;
+    align-items: end;
+    padding-bottom: 5px;
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0.25;
+}
+
+div.post-tag-container > div.post-tag {
+    margin: 0px 10px;
+}
+
+div.post-summary {
+    text-align: center;
+    margin-top: 5px;
+    opacity: 0.25;
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Post page proper formatting */
+div#post-info-container {
+    
+    border: ridge var(--post-title-border-color) 4px;
+    box-shadow: 4px 4px 8px 5px rgba(0,0,0,0.58);
+    margin-bottom: 20px;
+    background: var(--post-title-base-background);
+}
+
+div#post-info-container > div#post-display-title-container {
+    
+    background: var(--post-title-background-gradient);
+    border-bottom: ridge var(--post-title-border-color) 4px;
+    padding: 5px 2px 2px 2px; 
+    text-align: center;
+}
+
+div#post-display-title-container > span#post-title {
+    font-family: var(--page-title-font);
+    font-weight: bold; 
+    font-size: 2.25em;
+}
+
+div#post-display-title-container > span#post-subtitle {
+    text-shadow: 1px 1px 15px #000000;
+  text-align: center;
+  font-family: var(--base-text-font);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  padding-bottom: 5px;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+div#post-detail-container {
+    display:flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: black;
+}
+
+div#post-date{
+      font-family: var(--base-text-font);
+      width:50%;
+}
+div#post-author {
+    width:50%;
+    text-align: right;
+    font-family: var(--base-text-font);
+}
+div#post-tags {
+    width:50%;
+    display: flex; 
+    justify-content: right;
+    align-items: center;
+}

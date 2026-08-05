@@ -1,6 +1,82 @@
-#page-title {
+
+div#pageTitleContainer {
+    flex: 2; 
     display:flex; 
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
-    align-items:center;
+}
+
+div#pageTitleDescriptionContainer{    
+    --dummyvariable: 10px; 
+    /* Not yet used atm*/
+} 
+
+span#pageTitle > a{
+    font-family: var(--website-title-font);
+    font-size: 30px;
+    font-optical-sizing: auto;
+    font-weight:normal;
+    letter-spacing: 1px;
+    filter:drop-shadow(3px 3px 3px #000000);
+    color: transparent;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(15, 150, 171, 1) 100%);
+    background-clip: text;
+    margin: 5px 0px; 
+    
+}
+span#pageTitle > a:hover {
+    filter:drop-shadow(3px 3px 3px #6e7887);
+    transition: filter ease-out 0.1s;
+}
+
+div.header-wrapper {
+    display: flex; 
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+    
+}
+
+nav.site-nav {
+    flex: 1; 
+    display: flex;
+    justify-content: space-between; 
+}
+
+nav.site-nav > div.topnav_element > a {
+    font-family: var(--page-title-font);
+    font-size: 0.9em;
+    font-weight: normal;
+    color: var(--link-color);
+    transition: filter 0.1s ease-out; 
+    transition: color 0.1s ease-out; 
+}
+
+nav.site-nav > div.topnav_element > a:hover {
+    filter:drop-shadow(4px 4px 3px #6c94cd);
+    color: var(--link-visited-color)
+}
+
+div#siteTitleAndNavigation {
+    display:flex;
+    vertical-align:middle;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+header#site-header {
+    width: 100%; 
+    background-size:cover; 
+    background-attachment: scroll;
+    background-position: center;
+    backdrop-filter: blur(4px);
+}
+
+div#header-background-gradient {
+    background: linear-gradient(#00000000 0%, #00000000 40%, #000000FF 90%);
+    height: 100%;
+    padding-bottom:1em;
+    padding-top: 1em;
+
 }

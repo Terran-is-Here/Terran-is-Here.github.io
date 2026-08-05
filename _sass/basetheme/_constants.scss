@@ -1,0 +1,36 @@
+
+/** General stylesheet for importing fonts and whatnot shared by all other stylesheets within this theme*/ 
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    
+    --page-section-background-color: #06555474;
+    --page-section-border-color: #37ff8a5c; 
+    --page-section-title-color: #a8cfe7; 
+    --page-section-title-border-color: #7ec4c9;
+    --page-section-line-color: #000000;
+    --base-text-color: #ffffff; 
+    --base-text-font: "Inter", sans-serif; 
+    --base-text-size: 14.5px; 
+    --page-section-title-font-size: 1.35em; 
+    --base-image-border-color: #4E75A6; 
+    --base-image-background-color: #223349;
+
+    --link-visited-color: #22eaee;
+    --link-color: #f95ca3; 
+    --website-title-font: "Space Mono", monospace;
+    --page-title-font: "Electrolize", sans-serif; 
+    --page-header-link-font: "Quicksand", sans-serif; 
+
+    --h2-border-bottom-color: #ffffff;
+
+    --post-widget-border-color: #d6dbce;
+    --post-widget-base-background: #0000004a;
+    --post-title-base-background: #ffffffd5;
+    --post-title-border-color: #a5e1f8; 
+    --post-title-background-gradient: linear-gradient(90deg,rgba(46, 106, 115, 1) 0%, rgba(0, 40, 140, 1) 50%, rgba(46, 106, 115, 1) 100%);
+
+}

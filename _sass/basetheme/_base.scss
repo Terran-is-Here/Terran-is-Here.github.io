@@ -1,6 +1,118 @@
-.content-wrapper {
-    border: solid red; 
-};
+/** Set HTML and Body to fully span viewport**/
+html, body {
+    min-height: 100vh; // Force minimum and maximum height to be the span of the viewport, 
+    max-height:100vh;
+    max-width: 100%; // Then set the maximum width of this object to be 100% of the viewport too.
+    overflow-x: hidden; // Hide any overflow horizontally.
+}
 
-main {border: solid red 1px}
+
+
+main.page-content {
+    display:flex; 
+    flex-direction: column;
+
+}
+
+div#page {
+    flex:1; 
+
+}
+
+#page-display-title {
+    width: 100%;
+    min-width: fit-content;
+    
+    text-align: center;
+    text-shadow: 3px 3px 11px #000000;
+    font-family: var(--page-title-font);
+    font-weight: bold;
+    font-size:2.25em;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+
+#page-display-subtitle {
+    width: 100%;
+    text-shadow: 1px 1px 15px #000000;
+    min-width: fit-content;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 0.9em;
+    font-style: italic;
+
+}
+
+
+/**Ensure that HTML header actually scrolls since we know it's lwk bs**/
+html {
+    overflow-y: scroll;
+    max-height:100vh;
+}
+
+/*Set base body properties for background images and the like. */
+body {
+    background:black; 
+    margin: 0px; 
+    color: var(--base-text-color);
+    background-size:cover; 
+    background-attachment: scroll;
+    background-position: center;
+    backdrop-filter: blur(4px);
+}
+
+/* Set master page-content defining div to be set to have margins with left and right side of screen. */
+div#page {
+    height:100%;
+    width:90%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:10px;
+    
+}
+
+
+
+
+div#page-background-gradient{
+    background: linear-gradient( to bottom,#000000FF 0%,#000000FF 0.5em, rgba(0, 0, 0, 0.5) 4em, #00000000 6.5em,#00000000 100%);
+    padding-top: 2em;
+}
+/**
+ * Reset some basic elements for formatting in other themes; 
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/** Resets link styling for other stylesheets to use**/
+a {
+    text-decoration: none;
+    font-weight: normal;
+}
+a:link {
+    color: white; 
+}
+
+a:hover {
+    color: white;
+}
+
+a:visited {
+    color: white; 
+    text-decoration: none; 
+    
+}
+
+/* General class for hiding any content*/
+.hidden-content {
+    display:none !important; 
+}
+
 

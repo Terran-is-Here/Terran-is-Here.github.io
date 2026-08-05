@@ -1,0 +1,25 @@
+div#main-page-first-section {
+    display: flex;
+    justify-content: space-between;   
+}
+
+div#main-page-first-section-text {
+    width: 50%; 
+
+}
+
+div#main-page-post-feed {
+    min-width: 500px;
+    max-width: 600px; 
+    display:flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    text-align: center;
+}
+
+span#main-page-post-feed-header {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

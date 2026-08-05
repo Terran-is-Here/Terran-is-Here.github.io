@@ -1,0 +1,69 @@
+/*File for more of the base text formatting things (e.g. ul, li, etc.(  */
+div.page-content > h1, h2,h3,h4,h5,h6 {
+    font-family: var(--base-text-font);
+}
+
+
+div.page-content > ul,ol {
+    margin-left: 2em;
+}
+
+div.page-content > h2 {
+    
+    padding-top:0.5em;
+    text-align: center;
+    border-bottom: dashed 1px var(--h2-border-bottom-color);
+}
+
+div.page-content > table {
+    border: solid var(--page-section-title-border-color) 2px;
+    border-collapse: collapse;
+}
+
+div.page-content > table > thead > tr{
+    border-bottom: solid var(--page-section-title-border-color) 2px; 
+    padding: 1px 0px; 
+}
+div.page-content > table > thead > th, td {
+    border-right: solid var(--page-section-title-border-color) 2px; 
+}
+
+h3 {
+    margin-left: 0.25em; 
+    font-size: 1.5em;
+}
+
+div.page-content > ul > li {
+    font-size: 17px;
+    margin-top: 3px;
+}
+
+p > a {
+    color: var(--link-color); 
+    font-weight: bold;
+}
+
+p > a:visited {
+    color: var(--link-visited-color); 
+    font-weight: bold;
+}
+p > a:hover {
+    color: var(--link-visited-color); 
+    text-decoration: underline;
+    filter:drop-shadow(4px 4px 3px #24282e);
+}
+
+p > a:visited:hover {
+    color: var(--link-color); 
+    text-decoration: underline;
+    filter:drop-shadow(4px 4px 3px #8695ab);
+}
+
+h2::before {
+    content: "✦ ";
+    color: red;
+}
+h2::after {
+    content: " ✦";
+    color: red;
+}

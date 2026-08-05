@@ -1,0 +1,7 @@
+{% assign limit_count = include.recentPages | plus: 0 | default: 5%}
+
+<div class="post-feed-container">
+    {% for post in site.posts limit: limit_count %}
+        {% include postwidget.html displayPost=post %}
+    {% endfor %}
+</div>

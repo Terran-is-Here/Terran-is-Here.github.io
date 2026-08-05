@@ -1,5 +1,25 @@
 <head>
-<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url}}">    
+<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url}}">  
+<script src="{{ "/assets/js/buttonadder.js" | relative_url}}" defer></script>
+<script src="{{"/assets/js/clearfix.js" | relative_url}}" defer></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<title>{{site.shortname}} | {{page.title}}</title>
 
+<!--Automatically set page background image-->
+<style>
+    body {
+        background-image: url("{{page.backgroundImage | relative_url}}");
+    }
+    header#site-header {
+        background-image: url("{{page.backgroundHeaderImage | relative_url}}");
+    }
+
+</style>
+<meta content="{{page.title}}" property="og:title" />
+<meta content="{{page.summary}}" property="og:summary" />
+<meta content="{{site.url}}{{page.url}}" property="og:url" />
+<meta content="{{site.url}}{{page.embedImage | absolute-url}}" property="og:image" />
+<meta content="#43B581" data-react-helmet="true" name="theme-color" />
 
 </head>
+
